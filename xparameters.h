@@ -1,7 +1,7 @@
 #ifndef __XPARAMETERS_H__
 #define __XPARAMETERS_H__
 
-#define Xuint32 (unsigned int)
-#define Xuint8 (unsigned char)
+typedef unsigned int Xuint32;
+typedef unsigned char Xuint8;
 
 #endif //__XPARAMETERS_H__

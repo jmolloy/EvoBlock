@@ -1,4 +1,4 @@
-#include "EvoBlock.h"
+#include "EvoBlockSim.h"
 #include <stdio.h>
 
 #define POP_SIZE 128

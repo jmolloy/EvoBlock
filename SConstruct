@@ -3,7 +3,7 @@ import SCons
 sources = [
 'main.cc',
 'exp1.c',
-'EvoBlock.cc',
+'EvoBlockSim.cc',
 ]
 
 Program('EvoBlockSim', sources)
