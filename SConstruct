@@ -1,7 +1,6 @@
 import SCons, os
 
 sources = [
-'main.cc',
 'exp1.c',
 'EvoBlockSim.cc',
 ]
