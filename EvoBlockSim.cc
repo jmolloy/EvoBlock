@@ -14,13 +14,13 @@ void Cell::Calc() {
     m_output = (x == 0) ? 0 : 1;
 }
 
-EvoBlock::EvoBlock() {
+EvoBlockSim::EvoBlockSim() {
 }
 
-EvoBlock::~EvoBlock() {
+EvoBlockSim::~EvoBlockSim() {
 }
 
-void EvoBlock::Program(int col, int row, unsigned int x) {
+void EvoBlockSim::Program(int col, int row, unsigned int x) {
     int link_a = (x >> LINK_A_S) & LINK_MASK;
     int link_b = (x >> LINK_B_S) & LINK_MASK;
     int link_c = (x >> LINK_C_S) & LINK_MASK;
@@ -55,7 +55,7 @@ void EvoBlock::Program(int col, int row, unsigned int x) {
     m_array[col][row].SetLUT(lut);
 }
 
-unsigned char EvoBlock::Calc(unsigned int in) {
+unsigned char EvoBlockSim::Calc(unsigned int in) {
     // Calc column-at-a-time.
     for(int i = 0; i < 5; i++) {
         for(int j = 0; j < 8; j++) {

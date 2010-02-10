@@ -50,10 +50,10 @@ private:
     unsigned char m_output;
 };
 
-class EvoBlock {
+class EvoBlockSim {
 public:
-    EvoBlock();
-    ~EvoBlock();
+    EvoBlockSim();
+    ~EvoBlockSim();
 
     void SetTruthTable(unsigned char in, unsigned char out) {
         m_truth_table[in] = out;
