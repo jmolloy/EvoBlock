@@ -16,7 +16,6 @@ typedef struct
 void randomiseArrayConfig(ArrayConfig *config)
 {
 	Xuint32 cellNum = 0;
-	Xuint32 randNum = 0;
 
 	// Randomise cell configs
 	for (cellNum=0 ; cellNum<NUM_CELLS ; cellNum++)
