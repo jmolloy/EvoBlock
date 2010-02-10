@@ -25,10 +25,29 @@ void randomiseArrayConfig(ArrayConfig *config)
 	}
 }
 
-EvoBlockSim ebs();
+EvoBlockSim ebs = EvoBlockSim();
+Xuint32 hack_vector = 0;
+
+void EVOBLOCK_writeVector(Xuint32 vector) {
+	hack_vector = vector;
+}
+
+void EVOBLOCK_writeTargetRAM(Xuint32 input) {
+	ebs.SetTruthTable(hack_vector++, input);
+}
 
 void EVOBLOCK_writeMask(Xuint32 data) {
+	ebs.SetMask(data);
+}
 
+void configureArray(Xuint32 arrayNum, ArrayConfig *config) {
+	// TODO
+}
+
+Xuint32 EVOBLOCK_readMatch0() {
+}
+
+Xuint32 EVOBLOCK_readMatch1() {
 }
 
 #endif //__evoBlock_H__
