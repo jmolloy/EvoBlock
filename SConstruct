@@ -1,4 +1,4 @@
-import SCons
+import SCons, os
 
 sources = [
 'main.cc',
@@ -6,5 +6,8 @@ sources = [
 'EvoBlockSim.cc',
 ]
 
-Program('EvoBlockSim', sources)
-Default('EvoBlockSim')
+env = Environment()
+env.Replace(CC = 'g++')
+
+env.Program('EvoBlockSim', sources)
+env.Default('EvoBlockSim')
