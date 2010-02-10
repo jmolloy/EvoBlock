@@ -26,26 +26,52 @@ void EvoBlockSim::Program(int col, int row, unsigned int x) {
     int link_c = (x >> LINK_C_S) & LINK_MASK;
     int lut    = (x >> LUT_S)    & LUT_MASK;
 
-    Cell *cell_a, *cell_b, *cell_c;
+    Cell *cell_a = 0, *cell_b = 0, *cell_c = 0;
     if(link_a >= 8) {
         if(col == 0) {
-            cell_a = &m_array[0][link_a-8];
+            cell_a = &m_inputs[link_a-8];
+        } else if(col == 1) {
+            cell_a = &m_inputs_notted[link_a-8];
         } else {
-            cell_a = &m_array[col-1][link_a-8];
+            cell_a = &m_array[col-2][link_a-8];
+        }
+    } else {
+        if(col == 0) {
+            cell_a = &m_inputs_notted[link_a];
+        } else {
+            cell_a = &m_array[col-1][link_a];
         }
     }
+
     if(link_b >= 8) {
         if(col == 0) {
-            cell_b = &m_array[0][link_b-8];
+            cell_b = &m_inputs[link_b-8];
+        } else if(col == 1) {
+            cell_b = &m_inputs_notted[link_b-8];
         } else {
-            cell_b = &m_array[col-1][link_b-8];
+            cell_b = &m_array[col-2][link_b-8];
+        }
+    } else {
+        if(col == 0) {
+            cell_b = &m_inputs_notted[link_b];
+        } else {
+            cell_b = &m_array[col-1][link_b];
         }
     }
+
     if(link_c >= 8) {
         if(col == 0) {
-            cell_c = &m_array[0][link_c-8];
+            cell_c = &m_inputs[link_c-8];
+        } else if(col == 1) {
+            cell_c = &m_inputs_notted[link_c-8];
         } else {
-            cell_c = &m_array[col-1][link_c-8];
+            cell_c = &m_array[col-2][link_c-8];
+        }
+    } else {
+        if(col == 0) {
+            cell_c = &m_inputs_notted[link_c];
+        } else {
+            cell_c = &m_array[col-1][link_c];
         }
     }
 
@@ -56,6 +82,24 @@ void EvoBlockSim::Program(int col, int row, unsigned int x) {
 }
 
 unsigned char EvoBlockSim::Calc(unsigned int in) {
+    m_inputs[0]        .SetValue(  ((in >> 0) & 0x01));
+    m_inputs_notted[0] .SetValue( !((in >> 0) & 0x01));
+    m_inputs[1]        .SetValue(  ((in >> 1) & 0x01));
+    m_inputs_notted[1] .SetValue( !((in >> 1) & 0x01));
+    m_inputs[2]        .SetValue(  ((in >> 2) & 0x01));
+    m_inputs_notted[2] .SetValue( !((in >> 2) & 0x01));
+    m_inputs[3]        .SetValue(  ((in >> 3) & 0x01));
+    m_inputs_notted[3] .SetValue( !((in >> 3) & 0x01));
+    m_inputs[4]        .SetValue(  ((in >> 4) & 0x01));
+    m_inputs_notted[4] .SetValue( !((in >> 4) & 0x01));
+    m_inputs[5]        .SetValue(  ((in >> 5) & 0x01));
+    m_inputs_notted[5] .SetValue( !((in >> 5) & 0x01));
+    m_inputs[6]        .SetValue(  ((in >> 6) & 0x01));
+    m_inputs_notted[6] .SetValue( !((in >> 6) & 0x01));
+    m_inputs[7]        .SetValue(  ((in >> 7) & 0x01));
+    m_inputs_notted[7] .SetValue( !((in >> 7) & 0x01));
+
+
     // Calc column-at-a-time.
     for(int i = 0; i < 5; i++) {
         for(int j = 0; j < 8; j++) {

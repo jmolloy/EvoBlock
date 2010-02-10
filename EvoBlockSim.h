@@ -44,10 +44,20 @@ public:
 
     void Calc();
 
-private:
+protected:
     Cell *m_links[3];
     unsigned char m_lut[8];
     unsigned char m_output;
+};
+
+class InputCell : public Cell {
+public:
+    InputCell() {
+    }
+
+    void SetValue(unsigned char x) {
+        m_output = x;
+    }
 };
 
 class EvoBlockSim {
@@ -71,6 +81,8 @@ private:
     Cell m_array[5][8]; // Columns, rows.
     unsigned char m_mask;
     unsigned char m_truth_table[256];
+    InputCell m_inputs[8];
+    InputCell m_inputs_notted[8];
 };
 
 #endif
