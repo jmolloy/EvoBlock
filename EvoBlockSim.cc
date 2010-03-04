@@ -120,3 +120,41 @@ unsigned char EvoBlockSim::Calc(unsigned int in) {
 
     return match & m_mask;
 }
+
+unsigned char EvoBlockSim::CalcNoMatch(unsigned int in) {
+    m_inputs[0]        .SetValue(  ((in >> 0) & 0x01));
+    m_inputs_notted[0] .SetValue( !((in >> 0) & 0x01));
+    m_inputs[1]        .SetValue(  ((in >> 1) & 0x01));
+    m_inputs_notted[1] .SetValue( !((in >> 1) & 0x01));
+    m_inputs[2]        .SetValue(  ((in >> 2) & 0x01));
+    m_inputs_notted[2] .SetValue( !((in >> 2) & 0x01));
+    m_inputs[3]        .SetValue(  ((in >> 3) & 0x01));
+    m_inputs_notted[3] .SetValue( !((in >> 3) & 0x01));
+    m_inputs[4]        .SetValue(  ((in >> 4) & 0x01));
+    m_inputs_notted[4] .SetValue( !((in >> 4) & 0x01));
+    m_inputs[5]        .SetValue(  ((in >> 5) & 0x01));
+    m_inputs_notted[5] .SetValue( !((in >> 5) & 0x01));
+    m_inputs[6]        .SetValue(  ((in >> 6) & 0x01));
+    m_inputs_notted[6] .SetValue( !((in >> 6) & 0x01));
+    m_inputs[7]        .SetValue(  ((in >> 7) & 0x01));
+    m_inputs_notted[7] .SetValue( !((in >> 7) & 0x01));
+
+
+    // Calc column-at-a-time.
+    for(int i = 0; i < 5; i++) {
+        for(int j = 0; j < 8; j++) {
+            m_array[i][j].Calc();
+        }
+    }
+
+    unsigned char result = (m_array[4][0].GetOutput() << 0) |
+        (m_array[4][1].GetOutput() << 1) |
+        (m_array[4][2].GetOutput() << 2) |
+        (m_array[4][3].GetOutput() << 3) |
+        (m_array[4][4].GetOutput() << 4) |
+        (m_array[4][5].GetOutput() << 5) |
+        (m_array[4][6].GetOutput() << 6) |
+        (m_array[4][7].GetOutput() << 7);
+
+    return result;
+}

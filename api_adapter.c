@@ -1,6 +1,6 @@
 #include "api_adapter.h"
 
-static unsigned int calcFitness(uint8_t match);
+static unsigned int calcFitness(int x, uint8_t match);
 
 void reset_truth_table() {
     EVOBLOCK_writeVector(0);
@@ -45,38 +45,38 @@ void search(ArrayConfig *population, uint32_t pop_size, uint8_t num_inputs, unsi
             outputMatchData = EVOBLOCK_readMatch0();
 
             outputMatch = outputMatchData & 0xFF;
-            fitness = calcFitness(outputMatch);
+            fitness = calcFitness(i, outputMatch);
             population[set*8].fitness += fitness;
 
             outputMatch = (outputMatchData >> 8) & 0xFF;
-            fitness = calcFitness(outputMatch);
+            fitness = calcFitness(i, outputMatch);
             population[(set*8)+1].fitness += fitness;
 
             outputMatch = (outputMatchData >> 16) & 0xFF;
-            fitness = calcFitness(outputMatch);
+            fitness = calcFitness(i, outputMatch);
             population[(set*8)+2].fitness += fitness;
 
             outputMatch = (outputMatchData >> 24) & 0xFF;
-            fitness = calcFitness(outputMatch);
+            fitness = calcFitness(i, outputMatch);
             population[(set*8)+3].fitness += fitness;
 
             // Evaluate Arrays 4 to 7
             outputMatchData = EVOBLOCK_readMatch1();
 
             outputMatch = outputMatchData & 0xFF;
-            fitness = calcFitness(outputMatch);
+            fitness = calcFitness(i, outputMatch);
             population[(set*8)+4].fitness += fitness;
 
             outputMatch = (outputMatchData >> 8) & 0xFF;
-            fitness = calcFitness(outputMatch);
+            fitness = calcFitness(i, outputMatch);
             population[(set*8)+5].fitness += fitness;
 
             outputMatch = (outputMatchData >> 16) & 0xFF;
-            fitness = calcFitness(outputMatch);
+            fitness = calcFitness(i, outputMatch);
             population[(set*8)+6].fitness += fitness;
 
             outputMatch = (outputMatchData >> 24) & 0xFF;
-            fitness = calcFitness(outputMatch);
+            fitness = calcFitness(i, outputMatch);
             population[(set*8)+7].fitness += fitness;
         }
 
@@ -84,10 +84,16 @@ void search(ArrayConfig *population, uint32_t pop_size, uint8_t num_inputs, unsi
 
 }
 
-unsigned int calcFitness(uint8_t match) {
+unsigned int calcFitness(int input, uint8_t match) {
     /* TODO: make this much faster with a lookup table. */
     unsigned int bit;
 	unsigned int fitness = 0;
+
+    // Only add and graycode have 3 bit outputs.
+    if( (input >> 5) != 0x00 &&
+        (input >> 5) != 0x06 ) {
+        match |= 4;
+    }
 
 	for (bit=0 ; bit<8 ; bit++)
 	{

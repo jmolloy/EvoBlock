@@ -76,6 +76,7 @@ public:
     }
 
     unsigned char Calc(unsigned int in);
+    unsigned char CalcNoMatch(unsigned int in);
 
 private:
     Cell m_array[5][8]; // Columns, rows.

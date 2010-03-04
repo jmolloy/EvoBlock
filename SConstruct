@@ -8,7 +8,7 @@ sources = [
 
 env = Environment()
 env.Replace(CC = 'g++')
-env.Append(CCFLAGS = '-O2 -fopenmp -Wall -ggdb -Wno-deprecated')
+env.Append(CCFLAGS = '-O3 -fopenmp -Wall -ggdb -Wno-deprecated')
 env.Append(CPPPATH = ['#'])
 
 defaultTargets = []
