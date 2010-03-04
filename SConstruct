@@ -2,6 +2,8 @@ import SCons, os
 
 sources = [
 'EvoBlockSim.cc',
+'api_adapter.c',
+'evoBlock.c',
 ]
 
 env = Environment()

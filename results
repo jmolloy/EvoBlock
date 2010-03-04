@@ -1,0 +1,898 @@
+$VAR1 = [
+          {
+            'gens' => [
+                        0,
+                        '68553',
+                        '2470',
+                        '85499',
+                        '24174',
+                        0,
+                        '18877',
+                        0,
+                        '36681',
+                        '31354'
+                      ],
+            'population_size' => 8,
+            'mutation_rate' => 2
+          },
+          {
+            'gens' => [
+                        '8984',
+                        '39496',
+                        '9659',
+                        '17077',
+                        0,
+                        '47716',
+                        0,
+                        '14971',
+                        '16622',
+                        '19844'
+                      ],
+            'population_size' => 16,
+            'mutation_rate' => 2
+          },
+          {
+            'gens' => [
+                        '25676',
+                        '29542',
+                        0,
+                        0,
+                        '13029',
+                        '16791',
+                        '19723',
+                        '6218',
+                        '33005',
+                        0
+                      ],
+            'population_size' => 24,
+            'mutation_rate' => 2
+          },
+          {
+            'gens' => [
+                        0,
+                        '9768',
+                        0,
+                        '11479',
+                        0,
+                        '23707',
+                        0,
+                        '12007',
+                        0,
+                        '10437'
+                      ],
+            'population_size' => 32,
+            'mutation_rate' => 2
+          },
+          {
+            'gens' => [
+                        0,
+                        '14673',
+                        '7595',
+                        0,
+                        0,
+                        0,
+                        '4935',
+                        0,
+                        '7852',
+                        0
+                      ],
+            'population_size' => 40,
+            'mutation_rate' => 2
+          },
+          {
+            'gens' => [
+                        0,
+                        '9975',
+                        '9076',
+                        0,
+                        '9394',
+                        0,
+                        0,
+                        '6571',
+                        0,
+                        0
+                      ],
+            'population_size' => 48,
+            'mutation_rate' => 2
+          },
+          {
+            'gens' => [
+                        0,
+                        '5281',
+                        0,
+                        '7474',
+                        '3400',
+                        '13711',
+                        0,
+                        0,
+                        '5077',
+                        0
+                      ],
+            'population_size' => 56,
+            'mutation_rate' => 2
+          },
+          {
+            'gens' => [
+                        0,
+                        '3932',
+                        0,
+                        '4184',
+                        0,
+                        '10134',
+                        '5667',
+                        0,
+                        0,
+                        0
+                      ],
+            'population_size' => 64,
+            'mutation_rate' => 2
+          },
+          {
+            'gens' => [
+                        0,
+                        '87235',
+                        0,
+                        '96694',
+                        '59030',
+                        0,
+                        0,
+                        '96255',
+                        0,
+                        '35636'
+                      ],
+            'population_size' => 8,
+            'mutation_rate' => 10
+          },
+          {
+            'gens' => [
+                        0,
+                        '45807',
+                        0,
+                        '36092',
+                        '31357',
+                        '22392',
+                        '45398',
+                        0,
+                        0,
+                        0
+                      ],
+            'population_size' => 16,
+            'mutation_rate' => 10
+          },
+          {
+            'gens' => [
+                        0,
+                        0,
+                        '14980',
+                        0,
+                        0,
+                        0,
+                        '6935',
+                        0,
+                        0,
+                        '12377'
+                      ],
+            'population_size' => 24,
+            'mutation_rate' => 10
+          },
+          {
+            'gens' => [
+                        '9746',
+                        0,
+                        0,
+                        0,
+                        0,
+                        '16014',
+                        0,
+                        '17879',
+                        '12543',
+                        0
+                      ],
+            'population_size' => 32,
+            'mutation_rate' => 10
+          },
+          {
+            'gens' => [
+                        '5877',
+                        0,
+                        0,
+                        0,
+                        0,
+                        '8557',
+                        0,
+                        0,
+                        '5268',
+                        0
+                      ],
+            'population_size' => 40,
+            'mutation_rate' => 10
+          },
+          {
+            'gens' => [
+                        '5701',
+                        0,
+                        0,
+                        '15404',
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+            'population_size' => 48,
+            'mutation_rate' => 10
+          },
+          {
+            'gens' => [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+            'population_size' => 56,
+            'mutation_rate' => 10
+          },
+          {
+            'gens' => [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+            'population_size' => 64,
+            'mutation_rate' => 10
+          },
+          {
+            'gens' => [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+            'population_size' => 8,
+            'mutation_rate' => 18
+          },
+          {
+            'gens' => [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+            'population_size' => 16,
+            'mutation_rate' => 18
+          },
+          {
+            'gens' => [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+            'population_size' => 24,
+            'mutation_rate' => 18
+          },
+          {
+            'gens' => [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+            'population_size' => 32,
+            'mutation_rate' => 18
+          },
+          {
+            'gens' => [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+            'population_size' => 40,
+            'mutation_rate' => 18
+          },
+          {
+            'gens' => [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+            'population_size' => 48,
+            'mutation_rate' => 18
+          },
+          {
+            'gens' => [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+            'population_size' => 56,
+            'mutation_rate' => 18
+          },
+          {
+            'gens' => [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+            'population_size' => 64,
+            'mutation_rate' => 18
+          },
+          {
+            'gens' => [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+            'population_size' => 8,
+            'mutation_rate' => 26
+          },
+          {
+            'gens' => [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+            'population_size' => 16,
+            'mutation_rate' => 26
+          },
+          {
+            'gens' => [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+            'population_size' => 24,
+            'mutation_rate' => 26
+          },
+          {
+            'gens' => [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+            'population_size' => 32,
+            'mutation_rate' => 26
+          },
+          {
+            'gens' => [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+            'population_size' => 40,
+            'mutation_rate' => 26
+          },
+          {
+            'gens' => [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+            'population_size' => 48,
+            'mutation_rate' => 26
+          },
+          {
+            'gens' => [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+            'population_size' => 56,
+            'mutation_rate' => 26
+          },
+          {
+            'gens' => [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+            'population_size' => 64,
+            'mutation_rate' => 26
+          },
+          {
+            'gens' => [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+            'population_size' => 8,
+            'mutation_rate' => 34
+          },
+          {
+            'gens' => [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+            'population_size' => 16,
+            'mutation_rate' => 34
+          },
+          {
+            'gens' => [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+            'population_size' => 24,
+            'mutation_rate' => 34
+          },
+          {
+            'gens' => [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+            'population_size' => 32,
+            'mutation_rate' => 34
+          },
+          {
+            'gens' => [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+            'population_size' => 40,
+            'mutation_rate' => 34
+          },
+          {
+            'gens' => [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+            'population_size' => 48,
+            'mutation_rate' => 34
+          },
+          {
+            'gens' => [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+            'population_size' => 56,
+            'mutation_rate' => 34
+          },
+          {
+            'gens' => [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+            'population_size' => 64,
+            'mutation_rate' => 34
+          },
+          {
+            'gens' => [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+            'population_size' => 8,
+            'mutation_rate' => 42
+          },
+          {
+            'gens' => [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+            'population_size' => 16,
+            'mutation_rate' => 42
+          },
+          {
+            'gens' => [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+            'population_size' => 24,
+            'mutation_rate' => 42
+          },
+          {
+            'gens' => [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+            'population_size' => 32,
+            'mutation_rate' => 42
+          },
+          {
+            'gens' => [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+            'population_size' => 40,
+            'mutation_rate' => 42
+          },
+          {
+            'gens' => [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+            'population_size' => 48,
+            'mutation_rate' => 42
+          },
+          {
+            'gens' => [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+            'population_size' => 56,
+            'mutation_rate' => 42
+          },
+          {
+            'gens' => [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+            'population_size' => 64,
+            'mutation_rate' => 42
+          },
+          {
+            'gens' => [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+            'population_size' => 8,
+            'mutation_rate' => 50
+          },
+          {
+            'gens' => [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+            'population_size' => 16,
+            'mutation_rate' => 50
+          },
+          {
+            'gens' => [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+            'population_size' => 24,
+            'mutation_rate' => 50
+          },
+          {
+            'gens' => [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+            'population_size' => 32,
+            'mutation_rate' => 50
+          },
+          {
+            'gens' => [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+            'population_size' => 40,
+            'mutation_rate' => 50
+          },
+          {
+            'gens' => [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+            'population_size' => 48,
+            'mutation_rate' => 50
+          },
+          {
+            'gens' => [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+            'population_size' => 56,
+            'mutation_rate' => 50
+          },
+          {
+            'gens' => [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+            'population_size' => 64,
+            'mutation_rate' => 50
+          }
+        ];

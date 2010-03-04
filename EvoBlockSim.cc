@@ -29,15 +29,15 @@ void EvoBlockSim::Program(int col, int row, unsigned int x) {
     Cell *cell_a = 0, *cell_b = 0, *cell_c = 0;
     if(link_a >= 8) {
         if(col == 0) {
-            cell_a = &m_inputs[link_a-8];
-        } else if(col == 1) {
             cell_a = &m_inputs_notted[link_a-8];
+        } else if(col == 1) {
+            cell_a = &m_inputs[link_a-8];
         } else {
             cell_a = &m_array[col-2][link_a-8];
         }
     } else {
         if(col == 0) {
-            cell_a = &m_inputs_notted[link_a];
+            cell_a = &m_inputs[link_a];
         } else {
             cell_a = &m_array[col-1][link_a];
         }
@@ -45,15 +45,15 @@ void EvoBlockSim::Program(int col, int row, unsigned int x) {
 
     if(link_b >= 8) {
         if(col == 0) {
-            cell_b = &m_inputs[link_b-8];
-        } else if(col == 1) {
             cell_b = &m_inputs_notted[link_b-8];
+        } else if(col == 1) {
+            cell_b = &m_inputs[link_b-8];
         } else {
             cell_b = &m_array[col-2][link_b-8];
         }
     } else {
         if(col == 0) {
-            cell_b = &m_inputs_notted[link_b];
+            cell_b = &m_inputs[link_b];
         } else {
             cell_b = &m_array[col-1][link_b];
         }
@@ -61,15 +61,15 @@ void EvoBlockSim::Program(int col, int row, unsigned int x) {
 
     if(link_c >= 8) {
         if(col == 0) {
-            cell_c = &m_inputs[link_c-8];
-        } else if(col == 1) {
             cell_c = &m_inputs_notted[link_c-8];
+        } else if(col == 1) {
+            cell_c = &m_inputs[link_c-8];
         } else {
             cell_c = &m_array[col-2][link_c-8];
         }
     } else {
         if(col == 0) {
-            cell_c = &m_inputs_notted[link_c];
+            cell_c = &m_inputs[link_c];
         } else {
             cell_c = &m_array[col-1][link_c];
         }
